@@ -1,0 +1,12 @@
+
+services:
+  landingpage:
+    build:
+      context: .
+      dockerfile: Dockerfile_dev
+    container_name: landingpage
+    ports:
+      - "8060:8080"
+    volumes:
+      - .:/app
+      - /app/node_modules

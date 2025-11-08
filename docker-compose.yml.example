@@ -1,0 +1,9 @@
+
+services:
+  197-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 197-prod
+    ports:
+      - "8090:8080"
